@@ -13,14 +13,12 @@ class Player:
     def learn(self, my_move, their_move):
         self.their_move = their_move
 
-
 class RandomPlayer(Player):
     def move(self):
         return random.choice(moves)
 
     def learn(self, my_move, their_move):
         pass
-
 
 class HumanPlayer(Player):
     def move(self):
@@ -33,13 +31,14 @@ class HumanPlayer(Player):
             print("You played scissors.")
         else:
             print("Invalid input! Try again!")
+            #Calling the function again in case of wrong input
             self.move()
         return play
 
     def learn(self, my_move, their_move):
         pass
 
-
+# A player that plays yours previous move
 class ReflectPlayer(Player):
     def move(self):
         if self.their_move is None:
@@ -47,8 +46,9 @@ class ReflectPlayer(Player):
         else:
             return self.their_move
 
-
+# A player that plays the moves as cycle in order
 class CyclePlayer(Player):
+    # Calling the constructor with superpowers
     def __init__(self):
         super().__init__()
         self.moves_size = len(moves)
