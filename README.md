@@ -1,5 +1,18 @@
 # Rock-Paper-Scissors---Udacity
-This is a really simple (yet I am very proud of it) project in **python** that creates a fame of Rock Paper Scissors where you can set for a human to play against a computer player (That you can set in some cool ways).
+Project of 'Intro to Python' on the Nanodegree program 'Intro to Programming'
+
+## Details
+This is a  project in **python** that re-creates a game of Rock Paper Scissors.
+
+## Players
+In this program you can choose to use one of 4 players that are in the code:
+* Human Player: you;
+* Random Player: a computer user that plays randomly;
+* Reflect Player: a computer user that plays his opponent previous move (using the `learn`function);
+* Cycle Player: a computer user that plays his moves in order as a cycle.
 
 ## Requirements
-You have to import the `random`library in order for this code to work.
+You have to import the `random` library. In the code is already imported.
+
+## Contribution
+Any suggestion and tips would be gratly appreciated, thanks!
